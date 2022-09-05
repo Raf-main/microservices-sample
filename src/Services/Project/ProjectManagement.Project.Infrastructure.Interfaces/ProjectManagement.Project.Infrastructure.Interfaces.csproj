@@ -6,4 +6,9 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\BuildingBlocks\ProjectManagement.Infrastructure.Shared\ProjectManagement.Infrastructure.Shared.csproj" />
+    <ProjectReference Include="..\ProjectManagement.Project.Domain\ProjectManagement.Project.Domain.csproj" />
+  </ItemGroup>
+
 </Project>
