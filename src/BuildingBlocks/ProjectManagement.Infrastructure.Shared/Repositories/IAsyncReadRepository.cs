@@ -1,10 +1,8 @@
-﻿using ProjectManagement.Domain.Shared.Interfaces;
+﻿namespace ProjectManagement.Infrastructure.Shared.Repositories;
 
-namespace ProjectManagement.Infrastructure.Shared.Repositories;
-
-public interface IAsyncReadRepository<TAggregate, in TKey> where TAggregate : IAggregateRoot<TKey>
+public interface IAsyncReadRepository<TEntity, in TKey>
 {
-    Task<IEnumerable<TAggregate>> GetAllAsync();
-    Task<IEnumerable<TAggregate>> GetPagedAsync(int pageNumber, int pageSize);
-    Task<TAggregate> GetByKeyAsync(TKey key);
+    Task<IEnumerable<TEntity>> GetAllAsync();
+    Task<IEnumerable<TEntity>> GetPagedAsync(int pageNumber, int pageSize);
+    Task<TEntity?> GetByKeyAsync(TKey key);
 }

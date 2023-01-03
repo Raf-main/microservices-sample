@@ -1,10 +1,8 @@
-﻿using ProjectManagement.Domain.Shared.Interfaces;
+﻿namespace ProjectManagement.Infrastructure.Shared.Repositories;
 
-namespace ProjectManagement.Infrastructure.Shared.Repositories;
-
-public interface IAsyncWriteRepository<in TAggregate, TKey> where TAggregate : IAggregateRoot<TKey>
+public interface IAsyncWriteRepository<in TEntity>
 {
-    Task AddAsync(TAggregate aggregate);
-    Task UpdateAsync(TAggregate aggregate);
-    Task DeleteAsync(TAggregate aggregate);
+    Task AddAsync(TEntity entity);
+    Task UpdateAsync(TEntity entity);
+    Task DeleteAsync(TEntity entity);
 }

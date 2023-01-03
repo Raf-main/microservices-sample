@@ -10,4 +10,12 @@
     <ProjectReference Include="..\ProjectManagement.Domain.Shared\ProjectManagement.Domain.Shared.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Repositories\EfCore\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="6.0.8" />
+  </ItemGroup>
+
 </Project>
