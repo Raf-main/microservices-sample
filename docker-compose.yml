@@ -1,0 +1,15 @@
+version: '3.4'
+
+services:
+  projectmanagement.project.api:
+    image: ${DOCKER_REGISTRY-}projectmanagementprojectapi
+    build:
+      context: .
+      dockerfile: src\Services\Project\ProjectManagement.Project.API\Dockerfile
+
+  projectmanagement.identityserver.api:
+    image: ${DOCKER_REGISTRY-}projectmanagementidentityserverapi
+    build:
+      context: .
+      dockerfile: src\Services\Identity\ProjectManagement.IdentityServer.API\Dockerfile
+
