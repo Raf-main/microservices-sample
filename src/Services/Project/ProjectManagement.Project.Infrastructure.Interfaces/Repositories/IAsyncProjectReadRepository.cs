@@ -2,4 +2,4 @@
 
 namespace ProjectManagement.Project.Infrastructure.Interfaces.Repositories;
 
-internal interface IAsyncProjectReadRepository : IAsyncReadRepository<Domain.Entities.Project, Guid> { }
+public interface IAsyncProjectReadRepository : IAsyncAggregateReadRepository<Domain.Entities.Project, Guid> { }

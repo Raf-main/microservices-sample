@@ -1,3 +1,9 @@
-﻿namespace ProjectManagement.Project.Application.Queries;
+﻿using MediatR;
+using ProjectManagement.Project.Application.DTOs;
 
-public class GetProjectByIdQuery { }
+namespace ProjectManagement.Project.Application.Queries;
+
+public class GetProjectByIdQuery : IRequest<ProjectDto>
+{
+    public Guid Id { get; set; }
+}

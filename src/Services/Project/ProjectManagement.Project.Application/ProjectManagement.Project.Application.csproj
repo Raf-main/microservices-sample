@@ -9,6 +9,8 @@
   <ItemGroup>
     <Folder Include="Commands\" />
     <Folder Include="Behaviors\" />
+    <Folder Include="Exceptions\" />
+    <Folder Include="Mappers\" />
     <Folder Include="Wrappers\" />
   </ItemGroup>
 
@@ -19,6 +21,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\ProjectManagement.Project.Domain\ProjectManagement.Project.Domain.csproj" />
+    <ProjectReference Include="..\ProjectManagement.Project.Infrastructure.Interfaces\ProjectManagement.Project.Infrastructure.Interfaces.csproj" />
   </ItemGroup>
 
 </Project>

@@ -2,4 +2,4 @@
 
 namespace ProjectManagement.Project.Infrastructure.Interfaces.Repositories;
 
-internal interface IAsyncProjectWriteRepository : IAsyncWriteRepository<Domain.Entities.Project, Guid> { }
+public interface IAsyncProjectWriteRepository : IAsyncAggregateWriteRepository<Domain.Entities.Project, Guid> { }

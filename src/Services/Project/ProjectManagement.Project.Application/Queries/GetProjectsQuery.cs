@@ -1,3 +1,6 @@
-﻿namespace ProjectManagement.Project.Application.Queries;
+﻿using MediatR;
+using ProjectManagement.Project.Application.DTOs;
 
-public class GetProjectsQuery { }
+namespace ProjectManagement.Project.Application.Queries;
+
+public class GetProjectsQuery : IRequest<IEnumerable<ProjectDto>> { }
